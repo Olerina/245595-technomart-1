@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/min-style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -61,7 +60,7 @@
           <nav class="main-nav">
             <a href="index.html">Главная</a>
             <a href="#">Компания</a>
-            <a href="#">Каталог</a>
+            <a>Каталог</a>
             <a href="#">Новости</a>
             <a href="#">Спецпредложения</a>
             <a href="#">Доставка</a>
@@ -103,23 +102,23 @@
                 <h2 class="option-title">Производители:</h2>
                 <ul class="brends-list">
                   <li class="brends-item">
-                    <input type="checkbox" checked id="bosch">
+                    <input type="checkbox" checked id="bosch" name="bosch">
                     <label for="bosch">BOSCH</label>
                   </li>
                   <li class="brends-item">
-                    <input type="checkbox" id="interscol">
+                    <input type="checkbox" id="interscol" name="interscol">
                     <label for="interscol">ИНТЕРСКОЛ</label>
                   </li>
                   <li class="brends-item">
-                    <input type="checkbox" checked id="makita">
+                    <input type="checkbox" checked id="makita" name="makita">
                     <label for="makita">MAKITA</label>
                   </li>
                   <li class="brends-item">
-                    <input type="checkbox" id="dewalt">
+                    <input type="checkbox" id="dewalt" name="dewalt">
                     <label for="dewalt">DEWALT</label>
                   </li>
                   <li class="brends-item">
-                    <input type="checkbox" id="hitachi">
+                    <input type="checkbox" id="hitachi" name="hitachi">
                     <label for="hitachi">HITACHI</label>
                   </li>
                 </ul>
@@ -162,8 +161,8 @@
             <div class="catalog-item catalog-item-layout">
               <article class="top-item">
                 <div class="top-item-btn">
-                  <a class="item-buy" href="#">Купить</a>
-                  <a class="item-bookmark" href="#">В закладки</a>
+                  <a class="item-buy js-item-buy" href="basket.html">Купить</a>
+                  <a class="item-bookmark" href="bookmarks.html">В закладки</a>
                 </div>
                 <div class="item-image bfg-3000">
                 </div>
@@ -173,8 +172,8 @@
               </article>
               <article class="top-item">
                 <div class="top-item-btn">
-                  <a class="item-buy" href="#">Купить</a>
-                  <a class="item-bookmark" href="#">В закладки</a>
+                  <a class="item-buy js-item-buy" href="basket.html">Купить</a>
+                  <a class="item-bookmark" href="bookmarks.html">В закладки</a>
                 </div>
                 <div class="item-image bfg-6000">
                 </div>
@@ -184,19 +183,18 @@
               </article>
               <article class="top-item top-new">
                 <div class="top-item-btn">
-                  <a class="item-buy" href="#">Купить</a>
-                  <a class="item-bookmark" href="#">В закладки</a>
+                  <a class="item-buy js-item-buy" href="basket.html">Купить</a>
+                  <a class="item-bookmark" href="bookmarks.html">В закладки</a>
                 </div>
                 <div class="item-image bfg-2000">
                 </div>
                 <h3><a  class="top-item-title" href="#">Перфоратор BOSCH BFG&nbsp;2000</a></h3>
-                <div class="top-item-sale"></div>
                 <div class="top-item-price">12500 р.</div>
               </article>
               <article class="top-item">
                 <div class="top-item-btn">
-                  <a class="item-buy" href="#">Купить</a>
-                  <a class="item-bookmark" href="#">В закладки</a>
+                  <a class="item-buy js-item-buy" href="basket.html">Купить</a>
+                  <a class="item-bookmark" href="bookmarks.html">В закладки</a>
                 </div>
                 <div class="item-image bfg-3000">
                 </div>
@@ -206,8 +204,8 @@
               </article>
               <article class="top-item top-new">
                 <div class="top-item-btn">
-                  <a class="item-buy" href="#">Купить</a>
-                  <a class="item-bookmark" href="#">В закладки</a>
+                  <a class="item-buy js-item-buy" href="basket.html">Купить</a>
+                  <a class="item-bookmark" href="bookmarks.html">В закладки</a>
                 </div>
                 <div class="item-image bfg-6000">
                 </div>
@@ -217,19 +215,18 @@
               </article>
               <article class="top-item">
                 <div class="top-item-btn">
-                  <a class="item-buy" href="#">Купить</a>
-                  <a class="item-bookmark" href="#">В закладки</a>
+                  <a class="item-buy js-item-buy" href="basket.html">Купить</a>
+                  <a class="item-bookmark" href="bookmarks.html">В закладки</a>
                 </div>
                 <div class="item-image bfg-2000">
                 </div>
                 <h3><a  class="top-item-title" href="#">Перфоратор BOSCH BFG&nbsp;2000</a></h3>
-                <div class="top-item-sale"></div>
                 <div class="top-item-price">12500 р.</div>
               </article>
               <article class="top-item top-new">
                 <div class="top-item-btn">
-                  <a class="item-buy" href="#">Купить</a>
-                  <a class="item-bookmark" href="#">В закладки</a>
+                  <a class="item-buy js-item-buy" href="basket.html">Купить</a>
+                  <a class="item-bookmark" href="bookmarks.html">В закладки</a>
                 </div>
                 <div class="item-image bfg-3000">
                 </div>
@@ -239,8 +236,8 @@
               </article>
               <article class="top-item">
                 <div class="top-item-btn">
-                  <a class="item-buy" href="#">Купить</a>
-                  <a class="item-bookmark" href="#">В закладки</a>
+                  <a class="item-buy js-item-buy" href="basket.html">Купить</a>
+                  <a class="item-bookmark" href="bookmarks.html">В закладки</a>
                 </div>
                 <div class="item-image bfg-6000">
                 </div>
@@ -250,13 +247,12 @@
               </article>
               <article class="top-item">
                 <div class="top-item-btn">
-                  <a class="item-buy" href="#">Купить</a>
-                  <a class="item-bookmark" href="#">В закладки</a>
+                  <a class="item-buy js-item-buy" href="basket.html">Купить</a>
+                  <a class="item-bookmark" href="bookmarks.html">В закладки</a>
                 </div>
                 <div class="item-image bfg-2000">
                 </div>
                 <h3><a  class="top-item-title" href="#">Перфоратор BOSCH BFG&nbsp;2000</a></h3>
-                <div class="top-item-sale"></div>
                 <div class="top-item-price">12500 р.</div>
               </article>
               <div class="navigation">
@@ -307,12 +303,10 @@
       </div>
       <div class="footer-bottom">
         <div class="footer-bottom-layout container">
-          <div class="footer-copyright">
-            <p>
-              &#169; 2010–2017 Компания «Техномарт»
-              Все&nbsp;права&nbsp;защищены
-            </p>
-          </div>
+          <p class="footer-copyright">
+            &#169; 2010–2017 Компания «Техномарт» <br>
+            Все права защищены
+          </p>
           <div class="footer-social">
             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
@@ -325,7 +319,7 @@
           </div>
           <div class="footer-creator">
             <p>Разработано -
-              <a class="footer-link" href="https://htmlacademy.ru">htmlacademy.ru</a>
+              <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
           </div>
         </div>

@@ -89,7 +89,7 @@ a {
   padding-top: 12px;
   padding-bottom: 12px;
   font: inherit;
-  color: #000000;
+  color: #ffffff;
   border: none;
   background-color: #293449;
 }
@@ -135,9 +135,7 @@ a {
 
 .marker .header-link {
   display: block;
-  padding: 14px 20px;
-  padding-left: 43px;
-  padding-top: 9px;
+  padding: 10px 20px 14px 43px;
 }
 
 .marker .header-link:hover {
@@ -171,7 +169,7 @@ a {
   display: block;
   padding: 14px 20px;
   padding-left: 48px;
-  padding-top: 9px;
+  padding-top: 10px;
 }
 
 .basket .header-link:hover {
@@ -220,7 +218,7 @@ a {
 .make-order .header-link {
   display: block;
   padding: 14px 20px;
-  padding-top: 11px;
+  padding-top: 10px;
 }
 
 .header-link {
@@ -1016,7 +1014,9 @@ a {
   border-radius: 3px;
   text-transform: uppercase;
 }
-
+h3 + .top-item-price {
+  margin-top: 40px;
+}
 .top-item-price::after {
   content: "";
   position: absolute;
@@ -1199,7 +1199,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 285px;
+  min-height: 285px;
   margin-top: 25px;
 }
 
@@ -1285,7 +1285,9 @@ a {
 .service-credit {
   background: url("../img/credit.png") no-repeat right top;
 }
-
+.service-credit .service-text {
+  margin-bottom: 33px;
+}
 .service-btn {
   padding: 10px 45px;
   margin-left: 0;
@@ -1933,6 +1935,7 @@ a {
   justify-content: space-between;
   width: 550px;
   padding-top: 38px;
+  padding-bottom: 37px;
 }
 
 .footer-nav a:hover {
@@ -2045,84 +2048,41 @@ a {
   margin-left: 11px;
 }
 
-@-webkit-keyframes bounce {
-  0% {
-    -webkit-transform: translateX(-2000px);
-            transform: translateX(-2000px);
-  }
-  70% {
-    -webkit-transform: translateX(30px);
-            transform: translateX(30px);
-  }
-  90% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
 @keyframes bounce {
   0% {
-    -webkit-transform: translateX(-2000px);
-            transform: translateX(-2000px);
+    transform: translate(30px, 217px)
   }
   70% {
-    -webkit-transform: translateX(30px);
-            transform: translateX(30px);
+    transform: translate(-10px, -20px)
   }
   90% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    transform: translate(5px, 5px)
   }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@-webkit-keyframes shake {
-  0%, 100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
-  }
-  20%, 40%, 60%, 80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+  to {
+    transform: translate(0, 0)
   }
 }
 
 @keyframes shake {
-  0%, 100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+  0%, to {
+    transform: translateX(0)
   }
   10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    transform: translateX(-10px)
   }
   20%, 40%, 60%, 80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    transform: translateX(10px)
   }
 }
 
 .modal-write {
   display: none;
   position: fixed;
-  top: 50%;
+  top: 120px;
   left: 50%;
+  margin-left: -310px;
   width: 613px;
   height: 430px;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
   background: #ffffff;
   border-top: 7px solid #ee3643;
   z-index: 1000;
@@ -2295,7 +2255,7 @@ a {
   top: -20px;
   width: 66px;
   height: 66px;
-  background: url("../img/addition.png") no-repeat;
+  background: url("../img/form-1.svg") no-repeat;
 }
 
 .modal-basket-btn {
