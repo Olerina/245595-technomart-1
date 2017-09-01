@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans'), local('PTSans-Regular'), url('../fonts/ptsans.woff2') format('woff2'), url('../fonts/ptsans.woff') format('woff'), url('../fonts/ptsans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url('../fonts/ptsansitalic.woff2') format('woff2'), url('../fonts/ptsansitalic.woff') format('woff'), url('../fonts/ptsansitalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url('../fonts/ptsansbold.woff2') format('woff2'), url('../fonts/ptsansbold.woff') format('woff'), url('../fonts/ptsansbold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url('../fonts/ptsansbolditalic.woff2') format('woff2'), url('../fonts/ptsansbolditalic.woff') format('woff'), url('../fonts/ptsansbolditalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
 html, body {
   min-width: 960px;
   margin: 0;
@@ -49,19 +77,19 @@ a {
   background-color: #ee3643;
   min-height: 42px;
   -webkit-box-shadow: 0 5px 0 0 #b52933;
-          box-shadow: 0 5px 0 0 #b52933;
+  box-shadow: 0 5px 0 0 #b52933;
 }
 
 .header-logo:hover {
   background-color: #ca2c37;
   -webkit-box-shadow: 0 5px 0 0 #9a212a;
-          box-shadow: 0 5px 0 0 #9a212a;
+  box-shadow: 0 5px 0 0 #9a212a;
 }
 
 .header-logo:active {
   background-color: #ba2732;
   -webkit-box-shadow: 0 5px 0 0 #8e1e26;
-          box-shadow: 0 5px 0 0 #8e1e26;
+  box-shadow: 0 5px 0 0 #8e1e26;
 }
 
 .header-logo-link {
@@ -484,7 +512,7 @@ a {
   padding-left: 21px;
   padding-right: 22px;
   -webkit-box-shadow: 0 5px 0 0 #293449;
-          box-shadow: 0 5px 0 0 #293449;
+  box-shadow: 0 5px 0 0 #293449;
 }
 
 .main-nav a {
@@ -498,7 +526,7 @@ a {
 .main-nav a:active {
   background-color: #1d2739;
   -webkit-box-shadow: 0 5px 0 0 #1d2739;
-          box-shadow: 0 5px 0 0 #1d2739;
+  box-shadow: 0 5px 0 0 #1d2739;
 }
 
 .btn {
@@ -744,7 +772,7 @@ a {
   border-radius: 1px;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
-      transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .next::before {
@@ -758,7 +786,7 @@ a {
   border-radius: 1px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .prev {
@@ -776,7 +804,7 @@ a {
   border-radius: 1px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .prev::before {
@@ -790,7 +818,7 @@ a {
   border-radius: 1px;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
-      transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .top-products {
@@ -878,7 +906,7 @@ a {
 
 .top-item:hover {
   -webkit-box-shadow: 0 5px 10px 5px #dbdde0;
-          box-shadow: 0 5px 10px 5px #dbdde0;
+  box-shadow: 0 5px 10px 5px #dbdde0;
 }
 
 .top-item:hover .top-item-btn {
@@ -1016,9 +1044,11 @@ a {
   border-radius: 3px;
   text-transform: uppercase;
 }
-h3 + .top-item-price {
+
+h3+.top-item-price {
   margin-top: 40px;
 }
+
 .top-item-price::after {
   content: "";
   position: absolute;
@@ -1160,12 +1190,12 @@ h3 + .top-item-price {
 
 .top-maker-item:hover {
   -webkit-box-shadow: 0 5px 10px 5px #dbdde0;
-          box-shadow: 0 5px 10px 5px #dbdde0;
+  box-shadow: 0 5px 10px 5px #dbdde0;
 }
 
 .top-maker-item:active {
   -webkit-box-shadow: 0 5px 10px 0 #dbdde0;
-          box-shadow: 0 5px 10px 0 #dbdde0;
+  box-shadow: 0 5px 10px 0 #dbdde0;
 }
 
 .top-maker-item:active .maker-btn {
@@ -1287,9 +1317,11 @@ h3 + .top-item-price {
 .service-credit {
   background: url("../img/credit.png") no-repeat right top;
 }
+
 .service-credit .service-text {
   margin-bottom: 33px;
 }
+
 .service-btn {
   padding: 10px 45px;
   margin-left: 0;
@@ -1515,7 +1547,7 @@ h3 + .top-item-price {
   border-radius: 50%;
   background: #ababab;
   -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
-          box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
 }
 
 .range-controls .toggle-min {
@@ -1918,7 +1950,7 @@ h3 + .top-item-price {
   height: 63px;
   background-color: #ee3643;
   -webkit-box-shadow: 0 5px 0 0 #b52933;
-          box-shadow: 0 5px 0 0 #b52933;
+  box-shadow: 0 5px 0 0 #b52933;
 }
 
 .footer-logo-link {
@@ -2054,68 +2086,68 @@ h3 + .top-item-price {
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translate(30px, 217px);
-            transform: translate(30px, 217px)
+    transform: translate(30px, 217px)
   }
   70% {
     -webkit-transform: translate(-10px, -20px);
-            transform: translate(-10px, -20px)
+    transform: translate(-10px, -20px)
   }
   90% {
     -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px)
+    transform: translate(5px, 5px)
   }
   to {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0)
+    transform: translate(0, 0)
   }
 }
 
 @keyframes bounce {
   0% {
     -webkit-transform: translate(30px, 217px);
-            transform: translate(30px, 217px)
+    transform: translate(30px, 217px)
   }
   70% {
     -webkit-transform: translate(-10px, -20px);
-            transform: translate(-10px, -20px)
+    transform: translate(-10px, -20px)
   }
   90% {
     -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px)
+    transform: translate(5px, 5px)
   }
   to {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0)
+    transform: translate(0, 0)
   }
 }
 
 @-webkit-keyframes shake {
   0%, to {
     -webkit-transform: translateX(0);
-            transform: translateX(0)
+    transform: translateX(0)
   }
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px);
-            transform: translateX(-10px)
+    transform: translateX(-10px)
   }
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px);
-            transform: translateX(10px)
+    transform: translateX(10px)
   }
 }
 
 @keyframes shake {
   0%, to {
     -webkit-transform: translateX(0);
-            transform: translateX(0)
+    transform: translateX(0)
   }
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px);
-            transform: translateX(-10px)
+    transform: translateX(-10px)
   }
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px);
-            transform: translateX(10px)
+    transform: translateX(10px)
   }
 }
 
@@ -2135,12 +2167,12 @@ h3 + .top-item-price {
 .modal-write-show {
   display: block;
   -webkit-animation: bounce 0.6s;
-          animation: bounce 0.6s;
+  animation: bounce 0.6s;
 }
 
 .modal-error {
   -webkit-animation: shake 0.6s;
-          animation: shake 0.6s;
+  animation: shake 0.6s;
 }
 
 .modal-content-close {
@@ -2169,13 +2201,13 @@ h3 + .top-item-price {
 .modal-content-close::before {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .modal-content-close::after {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
-      transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .modal-write-form {
@@ -2259,9 +2291,9 @@ h3 + .top-item-price {
   height: 446px;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-          box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   z-index: 1000;
 }
 
@@ -2274,7 +2306,7 @@ h3 + .top-item-price {
   height: 275px;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background: #ffffff;
   border-top: 7px solid #ee3643;
   z-index: 1000;
