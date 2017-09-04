@@ -4,12 +4,25 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <!--
+  При установке двух шрифтов одной ссылкой не проходит валидность. "Illegal character in query: | is not allowed"
+  На вебинаре рассказывали, что шрифты можно также подключать локально через CSS.
+  Для прохождения валидности был выбран именно этот вариант.
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+-->
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link href="css/min-style.css" rel="stylesheet">
 </head>
 
 <body>
+  <!--
+  Размеры и расположение блоков, внешнее сходство с макетом имеются. (Б12)
+  В связи с разным расчётом величины блоков в разных браузерах, в Mozilla Firefox высота расчитывается неверно, не смотря на префиксы.
+  В Google Chrome и Opera блоки соответствуют Б11 и проходят по Perfect Pixel.
+  То есть, если делать под "лиса", в остальных браузерах "поедет".
+  Соответствующие скриншоты в папке img/perfect pexel.
+-->
   <header class="page-header">
     <div class="top-header">
       <div class="top-header-layout container">
